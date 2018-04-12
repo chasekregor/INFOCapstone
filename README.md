@@ -1,6 +1,6 @@
 # Chase Kregor's Information Science Capstone: Movie Recommender Website
 
-![KregorCapstoneGanttChart](https://stackoverflow.com/questions/14494747/add-images-to-readme-md-on-github)
+![KregorCapstoneGanttChart](images/KregorCapstoneGanttChart.png)
 
 ### Background:
 Capstone Project for my B.S. in Information Science at the University of Colorado Boulder.
