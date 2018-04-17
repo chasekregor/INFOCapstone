@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
-<title>Movie Recomendation System & Website</title>
+<title>MovieRec</title>
 <body>
-  <h1>Welcome to Chase Kregor's Information Science Capstone: Movie Recomendation System & Website</h1>
+  <button><a href="http://127.0.0.1:5000/"> Home Page</a></button>
+  <button><a href="http://127.0.0.1:5000/about">About Page</a></button>
+
+<h1>MovieRec: Home</h1>
+
+  <h2><b>Introduction: </b></h2>
+  <p> MovieRec tries to predict movies you may like. <br/><br/>
+    MovieRec gives you two sets of recommendations: <br/>
+    <ul>
+      <li> A set based on the movies you liked.</li>
+      <li> Another set based on the movies people similar to you liked as well.</li>
+    </ul>
+    The more ratings you give MovieRec the more accurate your predictions will be.<br/><br/>
+    Please rate at least 25 movies.
+
+  </p>
+
+  <h2><b>Rate Movies: </b></h2>
 
 
-<form action = "/getdelay" method="POST">
-<p> Select Origin:<input name="origin" type ="text" value="JFK" /> </p>
-<p> Select Destination: <input name="dest" type ="text" value="LAX" /> </p>
-<p> Select Airline :
-<select name="unique_carrier">
-<option value="AA">American Airlines </option>
-<option value="DL">Delta Air Lines </option>
-<option value="B6">JetBlue Airways</option>
-<option value="WN">Southwest Airlines </option>
-<option value="UA" selected>United Air Lines </option>
-</select>
-<p> Select Day of Week:<input name="day_of_week" type ="text" value="1" /> </p>
-<p> Select Departure Hour: <input name="dep_hour" type ="text" value="10" /> </p>
+<form action = "/result" method="POST">
+<p> Movie #1: <input name="dep_hour" type ="text" value="2.5" /> </p>
+<p> Movie #2: <input name="dep_hour" type ="text" value="2.5" /> </p>
+<p> Movie #3: <input name="dep_hour" type ="text" value="2.5" /> </p>
+<p> Movie #4: <input name="dep_hour" type ="text" value="2.5" /> </p>
+<p> Movie #5: <input name="dep_hour" type ="text" value="2.5" /> </p>
+<p> Movie #6: <input name="dep_hour" type ="text" value="2.5" /> </p>
+<p> Movie #7: <input name="dep_hour" type ="text" value="2.5" /> </p>
+<p> Movie #8: <input name="dep_hour" type ="text" value="2.5" /> </p>
+<p> Movie #9: <input name="dep_hour" type ="text" value="2.5" /> </p>
+<p> Movie #10: <input name="dep_hour" type ="text" value="2.5" /> </p>
+
 <p> <input type ="submit" value="submit" /> </p>
 </form>
+
+
 </body>
 </html>
