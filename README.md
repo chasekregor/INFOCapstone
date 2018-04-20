@@ -8,7 +8,7 @@ Capstone Project for my B.S. in Information Science at the University of Colorad
 
 A great way to display technical capabilities is to show skills in Machine Learning. The ability to project people’s future preferences is extremely valuable. Considering everyone, including the layman loves movies, why not build a great movie recommender?
 
-When talking about Currently movie recommenders there are really two types; content based or collaborative based. Content based systems are based on what you liked in the past and collaborative based systems are based on what people similar to you also liked. Current movie recommender systems only offer one of the two and not both. So I am currently building one that offers both options to users. I believe this is the best approach when building recommender systems for users, offering them choices as opposed to the one size fits all approach.
+Currently there are two types of movie recommenders; content based or collaborative based. Content based systems are based on what you liked in the past and collaborative based systems are based on what people similar to you also liked. Current movie recommender systems only offer one of the two and not both. So I am currently building one that offers both options to users. I believe this is the best approach when building recommender systems for users, offering them choices as opposed to the one size fits all approach.
 
 ## Table of Contents
 1. [Data](#data)
@@ -25,7 +25,7 @@ I am using the [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/
 
 ## Project
 
-![KregorCapstoneGanttChart](images/KregorCapstoneGanttChart.png =200x200)
+![KregorCapstoneGanttChart](images/KregorCapstoneGanttChart.png)
 
   - Loading the Data
   - Building the ML Models
@@ -38,6 +38,6 @@ I am using the [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/
 ## Next Steps
 
 ## References
-1. [Create a scikit-learn based prediction webapp using Flask and Heroku] (https://xcitech.github.io/tutorials/heroku_tutorial/)
+1. [Create a scikit-learn based prediction webapp using Flask and Heroku](https://xcitech.github.io/tutorials/heroku_tutorial/)
 
 ## Tech Stack
