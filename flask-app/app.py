@@ -13,9 +13,12 @@ def home():
 def about():
 	return render_template('about.html')
 
-@app.route("/result",methods=['POST','GET'])
-def result():
-	return render_template('result.html')
+@app.route("/getresult",methods=['POST','GET'])
+def get_result():
+	if request.method=='POST':
+		result=request.form
+		return render_template('result.html',prediction=prediction)
+		
 
 
 
