@@ -17,11 +17,15 @@ def about():
 def get_result():
 	if request.method=='POST':
 		result=request.form
+
+
+
+
+
+
+
+
 		return render_template('result.html',prediction=prediction)
-		
-
-
-
 
 if __name__ == '__main__':
 	app.debug = True
