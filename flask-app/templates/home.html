@@ -34,6 +34,12 @@
 <p> Movie #9: <input name="dep_hour" type ="text" value="2.5" /> </p>
 <p> Movie #10: <input name="dep_hour" type ="text" value="2.5" /> </p>
 
+{% for movie in movies %}
+<div><p>{{ movie.title }}: <b><input name="dep_hour" type ="text" value={{ movie.average }} /></b></p></div>
+
+{% endfor %}
+
+
 <p> <input type ="submit" value="submit" /> </p>
 </form>
 

@@ -7,11 +7,23 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-	return render_template('home.html')
 
-@app.route("/about")
-def about():
-	return render_template('about.html')
+
+	movies = [
+	{
+		'title':'Saving Private Ryan',
+		'average': 4
+	},
+	{
+		'title':'Saving Private Ryan',
+		'average': 4
+	}
+	]
+
+
+
+
+	return render_template('home.html', movies = movies)
 
 @app.route("/getresult",methods=['POST','GET'])
 def get_result():
@@ -26,6 +38,11 @@ def get_result():
 
 
 		return render_template('result.html',prediction=prediction)
+
+
+@app.route("/about")
+def about():
+	return render_template('about.html')
 
 if __name__ == '__main__':
 	app.debug = True
