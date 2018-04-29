@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home():
 
 
-	
+
 	pkl_file = open('movies', 'rb')
 	movies = pickle.load(pkl_file)
 
