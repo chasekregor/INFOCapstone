@@ -9,16 +9,9 @@ app = Flask(__name__)
 def home():
 
 
-	movies = [
-	{
-		'title':'Saving Private Ryan',
-		'average': 4
-	},
-	{
-		'title':'Saving Private Ryan',
-		'average': 4
-	}
-	]
+	
+	pkl_file = open('movies', 'rb')
+	movies = pickle.load(pkl_file)
 
 
 
@@ -29,12 +22,34 @@ def home():
 def get_result():
 	if request.method=='POST':
 		result=request.form
+		day_of_week = result['day_of_week']
+
+		pkl_file = open('cat', 'rb')
+		index_dict = pickle.load(pkl_file)
+		cat_vector = np.zeros(len(index_dict))
 
 
+		pkl_file = open('kmeans.pkl', 'rb')
+		kmeansmodel = pickle.load(pkl_file)
+
+		try:
+			cat_vector[index_dict['DAY_OF_WEEK_'+str(day_of_week)]] = 1
+		except:
+			pass
 
 
+		usercluster = kmeansmodel.predict(cat_vector)
+		allratings = kmeans.cluster_centers_[userscluster]
 
+		sort_index = np.argsort(allratings)
+		top20 = sort_index[-21:-1]
 
+		movietitles = kmeansmodel.columns
+
+		prediction = []
+
+		for i in top20:
+			prediction.append(movietitles[i])
 
 
 		return render_template('result.html',prediction=prediction)

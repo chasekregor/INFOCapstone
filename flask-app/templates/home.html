@@ -23,16 +23,6 @@
 
 
 <form action = "/result" method="POST">
-<p> Movie #1: <input name="dep_hour" type ="text" value="2.5" /> </p>
-<p> Movie #2: <input name="dep_hour" type ="text" value="2.5" /> </p>
-<p> Movie #3: <input name="dep_hour" type ="text" value="2.5" /> </p>
-<p> Movie #4: <input name="dep_hour" type ="text" value="2.5" /> </p>
-<p> Movie #5: <input name="dep_hour" type ="text" value="2.5" /> </p>
-<p> Movie #6: <input name="dep_hour" type ="text" value="2.5" /> </p>
-<p> Movie #7: <input name="dep_hour" type ="text" value="2.5" /> </p>
-<p> Movie #8: <input name="dep_hour" type ="text" value="2.5" /> </p>
-<p> Movie #9: <input name="dep_hour" type ="text" value="2.5" /> </p>
-<p> Movie #10: <input name="dep_hour" type ="text" value="2.5" /> </p>
 
 {% for movie in movies %}
 <div><p>{{ movie.title }}: <b><input name="dep_hour" type ="text" value={{ movie.average }} /></b></p></div>
