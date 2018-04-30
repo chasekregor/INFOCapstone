@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html>
-<title>Result</title>
-<body>
-  <button><a href="http://127.0.0.1:5000/"> Home Page</a></button>
-  <button><a href="http://127.0.0.1:5000/about">About Page</a></button>
+<title>MoviRec: Results</title>
+<h2>MoviRec</h2>
+<body style= "background-color: #e34848;">
 
-  <h1>MovieRec: Results</h1>
+<div class = "wrapper">
+  <button class = "button"><a href="http://127.0.0.1:5000/">Home</a></button>
+  <button class = "button"><a href="http://127.0.0.1:5000/about">About</a></button>
+  <button class = "button"><a href="http://127.0.0.1:5000/howitworks">How It Works</a></button>
 
+</div>
 
+  <style>
 
+  .wrapper {
+    text-align: center;
+}
+  .button {
+      border-radius: 12px;
+      background-color: lightgrey; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+  }
 
+  </style>
 <h2> Predictions: </h2>
 {% for i in prediction %}
   <p>{{ i["title"] }}</p>

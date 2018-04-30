@@ -2,12 +2,19 @@
 <html>
 <title>MoviRec</title>
 <h2>MoviRec</h2>
-<body style= "background-color: lightblue;">
+<!--- <body style="background: url('../images/backgroundImage.jpg')">
+  (../images/backgroundImage.jpg)
+--->
+
+</body>
+
+ <body style= "background-color: #e34848;">
+
 
 <div class = "wrapper">
   <button class = "button"><a href="http://127.0.0.1:5000/">Home</a></button>
   <button class = "button"><a href="http://127.0.0.1:5000/about">About</a></button>
-  <button class = "button"><a href="http://127.0.0.1:5000/howitworks">How Movi Rec Works</a></button>
+  <button class = "button"><a href="http://127.0.0.1:5000/howitworks">How It Works</a></button>
 
 </div>
 
@@ -67,10 +74,11 @@
 
 <table id="movies">
 
+
 <form action = "/result" method="POST">
 
 {% for movie in movies %}
-<tr><td><p>{{ movie.title }}: </td><td><b><input name={{movie.title}} type ="text" value={{ movie.average }} /></b></p></td></tr>
+<tr><td><p>{{ movie.title }}: </td><td><b><input name="{{movie.title}}" type ="text" value={{ movie.average }} /></b></p></td></tr>
 
 {% endfor %}
 
