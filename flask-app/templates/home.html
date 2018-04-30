@@ -1,34 +1,80 @@
 <!DOCTYPE html>
 <html>
-<title>MovieRec</title>
-<body>
-  <button><a href="http://127.0.0.1:5000/"> Home Page</a></button>
-  <button><a href="http://127.0.0.1:5000/about">About Page</a></button>
+<title>MoviRec</title>
+<h2>MoviRec</h2>
+<body style= "background-color: lightblue;">
 
-<h1>MovieRec: Home</h1>
+<div class = "wrapper">
+  <button class = "button"><a href="http://127.0.0.1:5000/">Home</a></button>
+  <button class = "button"><a href="http://127.0.0.1:5000/about">About</a></button>
+  <button class = "button"><a href="http://127.0.0.1:5000/howitworks">How Movi Rec Works</a></button>
 
-  <h2><b>Introduction: </b></h2>
-  <p> MovieRec tries to predict movies you may like. <br/><br/>
-    MovieRec gives you two sets of recommendations: <br/>
-    <ul>
-      <li> A set based on the movies you liked.</li>
-      <li> Another set based on the movies people similar to you liked as well.</li>
-    </ul>
-    The more ratings you give MovieRec the more accurate your predictions will be.<br/><br/>
-    Please rate at least 25 movies. Please rate movies 0-5.
+</div>
+
+  <style>
+
+  .wrapper {
+    text-align: center;
+}
+  .button {
+      border-radius: 12px;
+      background-color: lightgrey; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+  }
+
+
+#movies {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+#movies td, #movies th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#movies tr:nth-child(even){background-color: #f2f2f2;}
+
+#movies tr:hover {background-color: #ddd;}
+
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+  </style>
+
+
+  <h3><b>Introduction: </b></h3>
+  <p> MoviRec tries to predict movies you may like. <br/><br/>
+
+    The more movies you rate, the more accurate MoviRec's predictions will be.<br/><br/>
+    Please rate at least 25 movies from 0 to 5.
 
   </p>
 
-  <h2><b>Rate Movies: </b></h2>
+  <h3><b>Rate Movies: </b></h3>
 
+<table id="movies">
 
 <form action = "/result" method="POST">
 
 {% for movie in movies %}
-<div><p>{{ movie.title }}: <b><input name="dep_hour" type ="text" value={{ movie.average }} /></b></p></div>
+<tr><td><p>{{ movie.title }}: </td><td><b><input name={{movie.title}} type ="text" value={{ movie.average }} /></b></p></td></tr>
 
 {% endfor %}
 
+</table>
 
 <p> <input type ="submit" value="submit" /> </p>
 </form>
