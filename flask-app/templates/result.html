@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <title>MoviRec: Results</title>
-<h2>MoviRec</h2>
-<body style= "background-color: #e34848;">
+<h2 style="color:white;">MoviRec</h2>
+<body style= "background: url(static/images/theater.jpeg)";
 
 <div class = "wrapper">
   <button class = "button"><a href="http://127.0.0.1:5000/">Home</a></button>
@@ -29,11 +29,11 @@
   }
 
   </style>
-<h2> Predictions: </h2>
+<h2 style="color:white;"> Predictions: </h2>
 {% for i in prediction %}
-  <p>{{ i["title"] }}</p>
+  <p style="color:white;">{{ i["title"] }}</p>
 {% endfor %}
-  <h3> Based on movies people similar to you liked: {{ prediction }} </h3>
+
 
 
 

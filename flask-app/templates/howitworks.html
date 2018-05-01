@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <title>MoviRec: How It Works</title>
-<h2>MoviRec</h2>
-<body style= "background-color: #e34848;">
+<h1 style="color:white;">MoviRec</h1>
+<!-- <body style= "background-color: #e34848;"> ---->
+<body style= "background: url(static/images/theater.jpeg)";
 
 <div class = "wrapper">
   <button class = "button"><a href="http://127.0.0.1:5000/">Home</a></button>
@@ -17,20 +17,36 @@
   .wrapper {
     text-align: center;
 }
-  .button {
-      border-radius: 12px;
-      background-color: lightgrey; /* Green */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-  }
+.button {
+    border-radius: 12px;
+    background-color: white; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 
   </style>
-<h1>How Movi Rec Works</h1>
+
+
+<h2 style="color:white;">How It Works</h2>
+
+
+<p style="color:white;">
+  MoviRec uses a machine learning algorithm called <a href="https://en.wikipedia.org/wiki/K-means_clustering">k-means clustering</a>. <br/><br/>
+  k-means clustering is used to create groups of things based on their attributes or preferences. <br/><br/>
+  MoviRec was then trained on the <a href="https://grouplens.org/datasets/movielens/20m/">MovieLens 20 Million Dataset</a>.<br/><br/>
+
+  In doing so, it "learned" over 100k ratings and all their various groups.  <br/><br/>
+  Then, based on the movies you rated, you're assigned to a group. <br/><br/>
+  MoviRec then simply recommends movies that best represent that group. <br/><br/>
+
+
+</p>
+
+
 
 
 </body>

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <title>MoviRec</title>
-<h2>MoviRec</h2>
-<!--- <body style="background: url('../images/backgroundImage.jpg')">
-  (../images/backgroundImage.jpg)
---->
 
-</body>
+<table style="background-color:red">
 
- <body style= "background-color: #e34848;">
+
+
+<h1 style="color:white;">MoviRec</h1>
+
+<body style= "background: url(static/images/theater.jpeg)";
 
 
 <div class = "wrapper">
@@ -18,14 +19,14 @@
 
 </div>
 
-  <style>
+<style>
 
   .wrapper {
     text-align: center;
 }
   .button {
       border-radius: 12px;
-      background-color: lightgrey; /* Green */
+      background-color: white; /* Green */
       border: none;
       color: white;
       padding: 15px 32px;
@@ -35,17 +36,27 @@
       font-size: 16px;
   }
 
+}
+body {
+        color: red;
+}
+
+
 
 #movies {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+    width: 30%;
     background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 #movies td, #movies th {
     border: 1px solid #ddd;
     padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #movies tr:nth-child(even){background-color: #f2f2f2;}
@@ -55,37 +66,44 @@
 #movies th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
+    text-align: center;
     background-color: #4CAF50;
     color: white;
 }
-  </style>
 
 
-  <h3><b>Introduction: </b></h3>
-  <p> MoviRec tries to predict movies you may like. <br/><br/>
+</style>
+
+
+
+  <h3 style="color:white;"><b>Introduction: </b></h3>
+
+  <p style="color:red;"> MoviRec tries to predict movies you may like. <br/><br/>
 
     The more movies you rate, the more accurate MoviRec's predictions will be.<br/><br/>
-    Please rate at least 25 movies from 0 to 5.
+    Please rate at least 50 movies from 0 to 5, in 0.5 increments.
 
   </p>
 
-  <h3><b>Rate Movies: </b></h3>
+
+  <h3 style="color:white;"><b>Rate Movies: </b></h3>
+
+
 
 <table id="movies">
-
 
 <form action = "/result" method="POST">
 
 {% for movie in movies %}
 <tr><td><p>{{ movie.title }}: </td><td><b><input name="{{movie.title}}" type ="text" value={{ movie.average }} /></b></p></td></tr>
-
 {% endfor %}
 
 </table>
 
 <p> <input type ="submit" value="submit" /> </p>
+
 </form>
+
 
 
 </body>

@@ -14,7 +14,8 @@ def home():
 
 	pkl_file = open('movies', 'rb')
 	movies = pickle.load(pkl_file)
-	sampledmovies = np.random.choice(movies,50)
+	sampledmovies = np.random.choice(movies,500)
+	#sampledmovies = movies
 
 
 
