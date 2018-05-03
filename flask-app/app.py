@@ -105,7 +105,7 @@ def get_result():
 		for i in top30:
 			prediction.append(movies[i])
 
-		return render_template('result.html',prediction=prediction, movies = movies)
+		return render_template('result.html',prediction=prediction, movies = movies, usercluster = usercluster)
 
 """
 		for ix, moviedict in enumerate(movies):
