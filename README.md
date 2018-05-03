@@ -33,12 +33,10 @@ I am using the [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/
 - Building the Flask Website
 - Hosting Flask Website
 
-### Results & Presentation
-
-#### Results:
+### Results
 Project has very hard but very rewarding.
 
-#### Presentation:
+### Presentation
 I presented my capstone at the annual INFO showcase. The link to the video can be found here.
 
 ### Next Steps & Future Work
@@ -61,6 +59,6 @@ Model optimization.
 Downloading the MovieLense dataset and loading it onto a single computer can be very difficult. On top of this Github has a file upload limit which stops me from being able to upload the dataset that I used. If you want to download the CSV I used go to the link in the data folder.
 
 1. Git clone https://github.com/chasekregor/INFOCapstone.git
-2. Download the dataset at link.com and put the CSV file into the data folder within the repository.
-3. Run create_model.ipynb
+2. Download the [dataset](https://grouplens.org/datasets/movielens/20m/) at by [clicking here](http://files.grouplens.org/datasets/movielens/ml-20m.zip) and drag the "ml-20m" folder with all the CSVs into the repository you just downloaded.
+3. Run create_db_and_model.ipynb
 4. Navigate to flask-app folder and run app.py. The website should be served at [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
