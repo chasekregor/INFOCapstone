@@ -37,7 +37,7 @@ I am using the [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/
 Project has very hard but very rewarding.
 
 ### Presentation
-I presented my capstone at the annual INFO showcase. The link to the video can be found ![here].(https://youtu.be/Vs0pxyHD2CY)
+I presented my capstone at the annual INFO showcase. The link to the video can be found ![here.](https://youtu.be/Vs0pxyHD2CY)
 
 ### Next Steps & Future Work
 
