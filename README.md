@@ -37,7 +37,7 @@ I am using the [MovieLens 20M Dataset](https://grouplens.org/datasets/movielens/
 Project has very hard but very rewarding.
 
 ### Presentation
-I presented my capstone at the annual INFO showcase. The link to the video can be found here.
+I presented my capstone at the annual INFO showcase. The link to the video can be found ![here].(https://youtu.be/Vs0pxyHD2CY)
 
 ### Next Steps & Future Work
 
@@ -45,7 +45,7 @@ Model optimization.
 
 ### References & Thanks
 - [Create a scikit-learn based prediction webapp using Flask and Heroku](https://xcitech.github.io/tutorials/heroku_tutorial/)
-- [The Flask Mega-Tutorial Part II: Templates][https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates]
+- [The Flask Mega-Tutorial Part II: Templates](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates)
 - My fellow INFO Buff, Kyle Frye helped out on this project. I can't thank him enough for his support.
 - Dr. Micheal Paul with help on the ML models.
 - Dr. Brian Keegan with overall guidance.
@@ -56,7 +56,7 @@ Model optimization.
 
 ### Reproducibility
 
-Downloading the MovieLense dataset and loading it onto a single computer can be very difficult. On top of this Github has a file upload limit which stops me from being able to upload the dataset that I used. If you want to download the CSV I used go to the link in the data folder.
+Downloading the MovieLens dataset and loading it onto a single computer can be very difficult. On top of this Github has a file upload limit which stops me from being able to upload the dataset that I used. If you want to download the CSV I used go to the link in the data folder.
 
 1. Git clone https://github.com/chasekregor/INFOCapstone.git
 2. Download the [dataset](https://grouplens.org/datasets/movielens/20m/) at by [clicking here](http://files.grouplens.org/datasets/movielens/ml-20m.zip) and drag the "ml-20m" folder with all the CSVs into the repository you just downloaded.
